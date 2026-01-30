@@ -12,16 +12,20 @@ $project_link = $is_onepage ? '#project' : 'index.php#project';
         <div class="container clearfix">
           <div class="header-inner rel d-flex align-items-center">
             <div class="logo-outer">
-              <div class="logo"><a href="index.php"><img src="assets/images/logos/logo1-sem fundo2.png"
+              <div class="logo"><a href="index.php"><picture><source srcset="assets/images/logos/logo1-sem-fundo2-263w.webp 263w, assets/images/logos/logo1-sem-fundo2-526w.png 526w" type="image/webp"><img src="assets/images/logos/logo1-sem-fundo2-526w.png"
+                    srcset="assets/images/logos/logo1-sem-fundo2-263w.png 263w, assets/images/logos/logo1-sem-fundo2-526w.png 526w"
+                    sizes="(max-width: 768px) 263px, 200px"
+                    width="200" height="44"
                     style="width: 200px; background: #fff; border-radius: 10px; padding: 5px"
-                    alt="DF Informática - Software Sob Medida" title="DF Informática Desenvolvimento de Software"></a>
+                    alt="DF Informática - Software Sob Medida" title="DF Informática Desenvolvimento de Software"></picture></a>
               </div>
             </div>
             <div class="nav-outer clearfix">
               <nav class="main-menu navbar-expand-lg">
                 <div class="navbar-header">
-                  <div class="mobile-logo my-15"> <a href="index.php"> <img src="assets/images/logos/logo1-sem fundo.png"
-                        alt="DF Informática Desenvolvimento de Software" title="DF Informática"></a> </div>
+                  <div class="mobile-logo my-15"> <a href="index.php"> <picture><source srcset="assets/images/logos/logo1-sem-fundo2-263w.webp" type="image/webp"><img src="assets/images/logos/logo1-sem-fundo2-263w.png"
+                    width="263" height="57"
+                        alt="DF Informática Desenvolvimento de Software" title="DF Informática"></picture></a> </div>
                   <button type="button" class="navbar-toggle" id="botao_celular" data-bs-toggle="collapse"
                     data-bs-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span>
                     <span class="icon-bar"></span> </button>

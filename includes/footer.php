@@ -3,8 +3,12 @@
         <div class="row justify-content-xl-between justify-content-center">
           <div class="col-xl-4 col-lg-5 col-md-6">
             <div class="footer-widget widget_about me-md-5 wow fadeInUp delay-0-2s">
-              <div class="footer-logo mb-25"> <a href="index.php"><img class="lazyload"
-                    data-src="assets/images/logos/logo1-sem fundo2.png" alt="DF Informática - Software Sob Medida"></a> </div>
+              <div class="footer-logo mb-25"> <a href="index.php"><picture><source data-srcset="assets/images/logos/logo1-sem-fundo2-263w.webp 263w, assets/images/logos/logo1-sem-fundo2-526w.png 526w" type="image/webp"><img class="lazyload"
+                    data-src="assets/images/logos/logo1-sem-fundo2-526w.png"
+                    data-srcset="assets/images/logos/logo1-sem-fundo2-263w.png 263w, assets/images/logos/logo1-sem-fundo2-526w.png 526w"
+                    data-sizes="auto"
+                    width="200" height="44"
+                    alt="DF Informática - Software Sob Medida"></picture></a> </div>
               <p>DF Informática - empresa desenvolvedora de software sob medida em Brasília DF. Criação de sistemas personalizados e software à medida para sua empresa.</p>
               <div class="social-style-two pt-5">
                 <a href="https://www.facebook.com/dfinformatica.com.br" target="_blank"><i class="fab fa-facebook-f"></i></a>
@@ -48,11 +52,11 @@
       </a>
     </div>
   </div>
-  <script src="assets/js/jquery-3.6.0.min.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/js/appear.min.js"></script>
-  <script src="assets/js/wow.min.js"></script>
-  <script src="assets/js/script.js"></script>
+  <script src="assets/js/jquery-3.6.0.min.js" defer></script>
+  <script src="assets/js/bootstrap.min.js" defer></script>
+  <script src="assets/js/appear.min.js" defer></script>
+  <script src="assets/js/wow.min.js" defer></script>
+  <script src="assets/js/script.js" defer></script>
   <script src="assets/js/lazysizes.min.js" async></script>
 </body>
 </html>

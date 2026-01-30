@@ -1,13 +1,19 @@
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <link rel="stylesheet" type="text/css"
-    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <!-- CSS extra da home carregado via JS (evita bloqueio pelo Cloudflare) -->
+  <script>
+  (function(){var l=['assets/css/slick.min.css','assets/css/slick-theme-optimized.css','assets/css/jquery.animatedheadline.css'];function a(){l.forEach(function(h){var k=document.createElement('link');k.rel='stylesheet';k.href=h;document.head.appendChild(k);})}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',a)}else{a()}})();
+  </script>
+  <noscript><link rel="stylesheet" href="assets/css/slick.min.css"><link rel="stylesheet" href="assets/css/slick-theme-optimized.css"><link rel="stylesheet" href="assets/css/jquery.animatedheadline.css"></noscript>
 
+  <!-- Preload fontes críticas do hero (reduz CLS) -->
+  <link rel="preload" href="https://fonts.gstatic.com/s/catamaran/v17/o-0mIpQoyXQa2RxT7-5B6Ryxs2E_6n1iPHjct6L1SoM-jCpoiyAaBO9a6VI.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://fonts.gstatic.com/s/kumbhsans/v12/c4ml1n92AsfhuCq6tVsaioBd-Q.woff2" as="font" type="font/woff2" crossorigin>
   <style>
     /* tamil */
     @font-face {
       font-family: 'Catamaran';
       font-style: normal;
       font-weight: 400;
+      font-display: swap;
       src: url(https://fonts.gstatic.com/s/catamaran/v17/o-0mIpQoyXQa2RxT7-5B6Ryxs2E_6n1iPHjct6L1SoM-jCpoiyAaBO9M6VLKzA.woff2) format('woff2');
       unicode-range: U+0964-0965, U+0B82-0BFA, U+200C-200D, U+20B9, U+25CC;
     }
@@ -17,6 +23,7 @@
       font-family: 'Catamaran';
       font-style: normal;
       font-weight: 400;
+      font-display: swap;
       src: url(https://fonts.gstatic.com/s/catamaran/v17/o-0mIpQoyXQa2RxT7-5B6Ryxs2E_6n1iPHjct6L1SoM-jCpoiyAaBO9U6VLKzA.woff2) format('woff2');
       unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
     }
@@ -26,6 +33,7 @@
       font-family: 'Catamaran';
       font-style: normal;
       font-weight: 400;
+      font-display: swap;
       src: url(https://fonts.gstatic.com/s/catamaran/v17/o-0mIpQoyXQa2RxT7-5B6Ryxs2E_6n1iPHjct6L1SoM-jCpoiyAaBO9a6VI.woff2) format('woff2');
       unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
     }
@@ -35,6 +43,7 @@
       font-family: 'Catamaran';
       font-style: normal;
       font-weight: 500;
+      font-display: swap;
       src: url(https://fonts.gstatic.com/s/catamaran/v17/o-0mIpQoyXQa2RxT7-5B6Ryxs2E_6n1iPHjct6L1SoM-jCpoiyAaBO9M6VLKzA.woff2) format('woff2');
       unicode-range: U+0964-0965, U+0B82-0BFA, U+200C-200D, U+20B9, U+25CC;
     }
@@ -44,6 +53,7 @@
       font-family: 'Catamaran';
       font-style: normal;
       font-weight: 500;
+      font-display: swap;
       src: url(https://fonts.gstatic.com/s/catamaran/v17/o-0mIpQoyXQa2RxT7-5B6Ryxs2E_6n1iPHjct6L1SoM-jCpoiyAaBO9U6VLKzA.woff2) format('woff2');
       unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
     }
@@ -53,6 +63,7 @@
       font-family: 'Catamaran';
       font-style: normal;
       font-weight: 500;
+      font-display: swap;
       src: url(https://fonts.gstatic.com/s/catamaran/v17/o-0mIpQoyXQa2RxT7-5B6Ryxs2E_6n1iPHjct6L1SoM-jCpoiyAaBO9a6VI.woff2) format('woff2');
       unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
     }
@@ -62,6 +73,7 @@
       font-family: 'Catamaran';
       font-style: normal;
       font-weight: 600;
+      font-display: swap;
       src: url(https://fonts.gstatic.com/s/catamaran/v17/o-0mIpQoyXQa2RxT7-5B6Ryxs2E_6n1iPHjct6L1SoM-jCpoiyAaBO9M6VLKzA.woff2) format('woff2');
       unicode-range: U+0964-0965, U+0B82-0BFA, U+200C-200D, U+20B9, U+25CC;
     }
@@ -71,6 +83,7 @@
       font-family: 'Catamaran';
       font-style: normal;
       font-weight: 600;
+      font-display: swap;
       src: url(https://fonts.gstatic.com/s/catamaran/v17/o-0mIpQoyXQa2RxT7-5B6Ryxs2E_6n1iPHjct6L1SoM-jCpoiyAaBO9U6VLKzA.woff2) format('woff2');
       unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
     }
@@ -80,6 +93,7 @@
       font-family: 'Catamaran';
       font-style: normal;
       font-weight: 600;
+      font-display: swap;
       src: url(https://fonts.gstatic.com/s/catamaran/v17/o-0mIpQoyXQa2RxT7-5B6Ryxs2E_6n1iPHjct6L1SoM-jCpoiyAaBO9a6VI.woff2) format('woff2');
       unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
     }
@@ -89,6 +103,7 @@
       font-family: 'Kumbh Sans';
       font-style: normal;
       font-weight: 400;
+      font-display: swap;
       src: url(https://fonts.gstatic.com/s/kumbhsans/v12/c4ml1n92AsfhuCq6tVsaio5d-Zq-.woff2) format('woff2');
       unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
     }
@@ -98,6 +113,7 @@
       font-family: 'Kumbh Sans';
       font-style: normal;
       font-weight: 400;
+      font-display: swap;
       src: url(https://fonts.gstatic.com/s/kumbhsans/v12/c4ml1n92AsfhuCq6tVsaioBd-Q.woff2) format('woff2');
       unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
     }
@@ -107,6 +123,7 @@
       font-family: 'Kumbh Sans';
       font-style: normal;
       font-weight: 500;
+      font-display: swap;
       src: url(https://fonts.gstatic.com/s/kumbhsans/v12/c4ml1n92AsfhuCq6tVsaio5d-Zq-.woff2) format('woff2');
       unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
     }
@@ -116,6 +133,7 @@
       font-family: 'Kumbh Sans';
       font-style: normal;
       font-weight: 500;
+      font-display: swap;
       src: url(https://fonts.gstatic.com/s/kumbhsans/v12/c4ml1n92AsfhuCq6tVsaioBd-Q.woff2) format('woff2');
       unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
     }
@@ -125,6 +143,7 @@
       font-family: 'Kumbh Sans';
       font-style: normal;
       font-weight: 700;
+      font-display: swap;
       src: url(https://fonts.gstatic.com/s/kumbhsans/v12/c4ml1n92AsfhuCq6tVsaio5d-Zq-.woff2) format('woff2');
       unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
     }
@@ -134,6 +153,7 @@
       font-family: 'Kumbh Sans';
       font-style: normal;
       font-weight: 700;
+      font-display: swap;
       src: url(https://fonts.gstatic.com/s/kumbhsans/v12/c4ml1n92AsfhuCq6tVsaioBd-Q.woff2) format('woff2');
       unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
     }
@@ -143,16 +163,13 @@
       font-family: 'Shadows Into Light';
       font-style: normal;
       font-weight: 400;
+      font-display: swap;
       src: url(https://fonts.gstatic.com/s/shadowsintolight/v15/UqyNK9UOIntux_czAvDQx_ZcHqZXBNQzdcD5.woff2) format('woff2');
       unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
     }
   </style>
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="assets/css/fontawesome-5.14.0.min.css">
-
-  <!-- Flaticon -->
-  <link rel="stylesheet" href="assets/css/flaticon.min.css">
+  <!-- Font Awesome e Flaticon - já carregados async no head.php -->
 
   <!-- Bootstrap -->
   <style>
@@ -12061,14 +12078,6 @@
       display: block
     }
   </style>
-  <!-- Type Writer -->
-  <link rel="stylesheet" href="assets/css/jquery.animatedheadline.css">
-  <!-- Animate -->
-  <link rel="stylesheet" href="assets/css/animate.min.css">
-  <!-- Slick -->
-  <link rel="stylesheet" href="assets/css/slick.min.css">
-  <!-- Main Style -->
-  <link rel="stylesheet" href="assets/css/style.css">
 
   <!-- Event snippet for Contato whatsapp conversion page
 In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->

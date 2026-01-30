@@ -16,18 +16,22 @@ include 'includes/head.php';
         <div class="container clearfix">
           <div class="header-inner rel d-flex align-items-center">
             <div class="logo-outer">
-              <div class="logo"><a href="."><img src="assets/images/logos/logo1-sem fundo2.png"
+              <div class="logo"><a href="."><picture><source srcset="assets/images/logos/logo1-sem-fundo2-263w.webp 263w, assets/images/logos/logo1-sem-fundo2-526w.png 526w" type="image/webp"><img src="assets/images/logos/logo1-sem-fundo2-526w.png"
+                    srcset="assets/images/logos/logo1-sem-fundo2-263w.png 263w, assets/images/logos/logo1-sem-fundo2-526w.png 526w"
+                    sizes="(max-width: 768px) 263px, 200px"
+                    width="200" height="44"
                     style="width: 200px; background: #fff; border-radius: 10px; padding: 5px"
-                    alt="DF Informática Criação de Sistemas Sob-Medida" title="DF Informática Marketing Digital"></a>
+                    alt="DF Informática Criação de Sistemas Sob-Medida" title="DF Informática Marketing Digital"></picture></a>
               </div>
             </div>
             <div class="nav-outer clearfix">
               <!-- Main Menu -->
               <nav class="main-menu navbar-expand-lg">
                 <div class="navbar-header">
-                  <div class="mobile-logo my-15"> <a href="."> <img src="assets/images/logos/logo1-sem fundo.png"
+                  <div class="mobile-logo my-15"> <a href="."> <picture><source srcset="assets/images/logos/logo1-sem-fundo2-263w.webp" type="image/webp"><img src="assets/images/logos/logo1-sem-fundo2-263w.png"
+                    width="263" height="57"
                         alt="DF Informática Desenvolvimento de Sistemas"
-                        title="DF Informática Desenvolvimento de Sistemas"> </a> </div>
+                        title="DF Informática Desenvolvimento de Sistemas"></picture></a> </div>
 
                   <!-- Toggle Button -->
                   <button type="button" class="navbar-toggle" id="botao_celular" data-bs-toggle="collapse"
@@ -235,7 +239,7 @@ include 'includes/head.php';
             <div class="slider-content"> <span class="sub-title">Mais de 15 anos de experiência em criação de sistemas e
                 aplicativos</span>
               <h1>Desenvolvimentos de sistemas e aplicativos personalizados</h1>
-              <div class="slider-btns"> <a href="#contact" class="theme-btn"
+              <div class="slider-btns" style="min-height:60px"> <a href="#contact" class="theme-btn"
                   title="Entre em contato e desenvolva seu sistema com nossa empresa">Orçamento<i
                     class="fas fa-angle-double-right"></i></a> <a href="#project" class="theme-btn style-three"
                   title="Alguns trabalhos realizados por nossa Agência">Trabalhos Feitos <i
@@ -257,7 +261,7 @@ include 'includes/head.php';
           <div class="container">
             <div class="slider-content"> <span class="sub-title">Criação de Sistemas e Aplicativos</span>
               <h2 class="h1">Criação de Sistemas e App Sob-medida</h2>
-              <div class="slider-btns"> <a href="#contact" class="theme-btn"
+              <div class="slider-btns" style="min-height:60px"> <a href="#contact" class="theme-btn"
                   title="Orçamento para desenvolvimento de sistemas sob medida">Orçamento<i
                     class="fas fa-angle-double-right"></i></a> <a href="#project"
                   title="Trabalho de desenvolvimento de sistemas" class="theme-btn style-three">Trabalhos Feitos <i
@@ -285,7 +289,7 @@ include 'includes/head.php';
             <div class="slider-content"> <span class="sub-title">Desenvolvimento de sistemas e aplicativos sob
                 medida</span>
               <h2 class="h1">Monte, Escolha e Aprimore seu sistema ou aplicativo</h2>
-              <div class="slider-btns"> <a href="#contact" class="theme-btn"
+              <div class="slider-btns" style="min-height:60px"> <a href="#contact" class="theme-btn"
                   title="Desenvolvimento de sistemas em Brasilia">Orçamento<i class="fas fa-angle-double-right"></i></a>
                 <a href="#project" class="theme-btn style-three" title="Sistemas desenvolvidos em Brasília DF">Trabalhos
                   Feitos <i class="fas fa-angle-double-right"></i></a> </div>
@@ -680,7 +684,7 @@ include 'includes/head.php';
     <!-- CTA Area start -->
     <section class="call-to-action-area rel z-2">
       <div class="container">
-        <div class="cta-inner bgs-cover" style="background-image: url(assets/images/background/cta-bg.jpg);">
+        <div class="cta-inner bgs-cover" style="background-image: url(assets/images/background/cta-bg.webp);">
           <div class="row">
             <div class="col-xl-6">
               <div class="cta-item wow fadeInLeft delay-0-2s">
@@ -874,7 +878,7 @@ include 'includes/head.php';
           <div class="col-xl-4 col-lg-5 col-md-6">
             <div class="footer-widget widget_about me-md-5 wow fadeInUp delay-0-2s">
               <div class="footer-logo mb-25"> <a href="."><img class="lazyload"
-                    data-src="assets/images/logos/logo1-sem fundo2.png" alt="Criar sistema empresarial"></a> </div>
+                    data-src="assets/images/logos/logo1-sem-fundo2-526w.png" alt="Criar sistema empresarial"></a> </div>
               <p>DF Informática fazendo a diferença na sua vida de empreendedor, mudando estilo e funcionalidade do seu
                 sistema para melhor.</p>
               <div class="social-style-two pt-5"> <a href="https://www.facebook.com/dfinformatica.com.br"
@@ -962,32 +966,18 @@ include 'includes/head.php';
   <?Php } ?>
 
 
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-  <!-- Jquery -->
-  <script src="assets/js/jquery-3.6.0.min.js"></script>
-  <!-- Bootstrap -->
-  <script src="assets/js/bootstrap.min.js"></script>
-  <!-- Appear Js -->
-  <script src="assets/js/appear.min.js"></script>
-  <!-- Slick -->
-  <script src="assets/js/slick.min.js"></script>
-  <!-- Magnific Popup -->
-  <script src="assets/js/jquery.magnific-popup.min.js"></script>
-  <!-- Nice Select -->
-  <script src="assets/js/jquery.nice-select.min.js"></script>
-  <!-- Image Loader -->
-  <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-  <!-- Type Writer -->
-  <script src="assets/js/jquery.animatedheadline.min.js"></script>
-  <!-- Circle Progress -->
-  <script src="assets/js/circle-progress.min.js"></script>
-  <!-- Isotope -->
-  <script src="assets/js/isotope.pkgd.min.js"></script>
-  <!--  WOW Animation -->
-  <script src="assets/js/wow.min.js"></script>
-  <!-- Custom script -->
-  <script src="assets/js/script.js"></script>
+  <script src="assets/js/jquery-3.6.0.min.js" defer></script>
+  <script src="assets/js/bootstrap.min.js" defer></script>
+  <script src="assets/js/appear.min.js" defer></script>
+  <script src="assets/js/slick.min.js" defer></script>
+  <script src="assets/js/jquery.magnific-popup.min.js" defer></script>
+  <script src="assets/js/jquery.nice-select.min.js" defer></script>
+  <script src="assets/js/imagesloaded.pkgd.min.js" defer></script>
+  <script src="assets/js/jquery.animatedheadline.min.js" defer></script>
+  <script src="assets/js/circle-progress.min.js" defer></script>
+  <script src="assets/js/isotope.pkgd.min.js" defer></script>
+  <script src="assets/js/wow.min.js" defer></script>
+  <script src="assets/js/script.js" defer></script>
   <script src="assets/js/lazysizes.min.js" async></script>
   <script>
     $(document).ready(function () {
