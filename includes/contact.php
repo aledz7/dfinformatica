@@ -4,6 +4,7 @@
           <div class="col-xl-5 col-lg-6">
             <form class="contact-area-form text-center wow fadeInRight delay-0-2s" name="contact-area-form"
               action="envia2.php" method="post">
+              <input type="hidden" name="csrf_token" value="<?php echo htmlspecialchars(csrf_token()); ?>">
               <h4>Nós entramos em contato</h4>
               <input type="text" id="name" name="name" class="form-control" value="" placeholder="Nome Completo" required="">
               <input type="email" id="email" name="email" class="form-control" value="" placeholder="E-mail" required="">

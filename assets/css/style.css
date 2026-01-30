@@ -4175,23 +4175,31 @@ h6, .h6 {
     margin-bottom: 15px;
     display: inline-block;
     font-family: 'Catamaran', sans-serif; }
-  .slider-content h1 {
+  .slider-content h1,
+  .slider-content h2 {
     color: white;
+  }
+  .slider-content h1,
+  .slider-content h2 {
     font-size: 85px;
     line-height: 1.1;
     margin-bottom: 30px;
     letter-spacing: -3px; }
     @media only screen and (max-width: 1199px) {
-      .slider-content h1 {
+      .slider-content h1,
+      .slider-content h2 {
         font-size: 70px; } }
     @media only screen and (max-width: 767px) {
-      .slider-content h1 {
+      .slider-content h1,
+      .slider-content h2 {
         font-size: 60px; } }
     @media only screen and (max-width: 575px) {
-      .slider-content h1 {
+      .slider-content h1,
+      .slider-content h2 {
         font-size: 46px; } }
     @media only screen and (max-width: 375px) {
-      .slider-content h1 {
+      .slider-content h1,
+      .slider-content h2 {
         font-size: 38px; } }
   .slider-content .slider-btns {
     margin-left: -5px;

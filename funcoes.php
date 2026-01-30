@@ -111,14 +111,14 @@ function busca_produtos($inputCampo, $campoId, $targetParent, $tituloBusca, $tit
 		$nome_campo = $inputCampo;
 	}
     ?>
-	<input name="<?=$nome_campo;?>" ondblclick="<?=$onClick;?>" placeholder="C&oacute;digo" type="text" class="form-control" style="width:70px; float:left; margin-right:10px;" id="<?=$inputCampo;?>" autocomplete="off" onkeyup="clickDados<?=$inputCampo;?>(); " value="<?=$_GET['idAtual'];?>" autofocus value="<?=$_GET[$inputCampo];?>" />
-	<input type="hidden" name="digitadoBusGen" id="digitadoBusGen<?=$inputCampo;?>" value="" />
+	<input name="<?=htmlspecialchars($nome_campo);?>" ondblclick="<?=htmlspecialchars($onClick);?>" placeholder="C&oacute;digo" type="text" class="form-control" style="width:70px; float:left; margin-right:10px;" id="<?=htmlspecialchars($inputCampo);?>" autocomplete="off" onkeyup="clickDados<?=htmlspecialchars($inputCampo);?>(); " value="<?=htmlspecialchars(isset($_GET['idAtual']) ? $_GET['idAtual'] : '');?>" autofocus value="<?=htmlspecialchars(isset($_GET[$inputCampo]) ? $_GET[$inputCampo] : '');?>" />
+	<input type="hidden" name="digitadoBusGen" id="digitadoBusGen<?=htmlspecialchars($inputCampo);?>" value="" />
     <div style="margin-top:7px; float:left;">
-    <span id="desc_<?=$inputCampo;?>"><?=$_GET['label'];?></span>
-    <a href="javascript:;" onclick="<?=$onClick;?>" title="Buscar <? echo $tituloBusca;?>"><img src="images/Search.png" width="19" style="margin-top:-3px;" /></a>
+    <span id="desc_<?=htmlspecialchars($inputCampo);?>"><?=htmlspecialchars(isset($_GET['label']) ? $_GET['label'] : '');?></span>
+    <a href="javascript:;" onclick="<?=htmlspecialchars($onClick, ENT_QUOTES, 'UTF-8');?>" title="Buscar <?=htmlspecialchars($tituloBusca);?>"><img src="images/Search.png" width="19" style="margin-top:-3px;" /></a>
     </div>
     <iframe id="enviaBuscaGenerica<?=$inputCampo;?>" name="enviaBuscaGenerica<?=$inputCampo;?>" src="" style="width:0px;height:0px;border:0px;"></iframe>
-<?
+<?php
 }
 
 function DiaCorretoOcorrencia($data) { /// data br
@@ -269,14 +269,14 @@ function buscaGenericad($inputCampo, $campoId, $targetParent, $tituloBusca, $tit
 		$nome_campo = $inputCampo;
 	}
     ?>
-	<input name="<?=$nome_campo;?>" ondblclick="<?=$onClick;?>" placeholder="C&oacute;digo" type="text" class="form-control" style="width:70px; float:left; margin-right:10px;" id="<?=$inputCampo;?>" autocomplete="off" onkeyup="clickDados<?=$inputCampo;?>(); " value="<?=$_GET['idAtual'];?>" autofocus value="<?=$_GET[$inputCampo];?>" />
-	<input type="hidden" name="digitadoBusGen" id="digitadoBusGen<?=$inputCampo;?>" value="" />
+	<input name="<?=htmlspecialchars($nome_campo);?>" ondblclick="<?=htmlspecialchars($onClick);?>" placeholder="C&oacute;digo" type="text" class="form-control" style="width:70px; float:left; margin-right:10px;" id="<?=htmlspecialchars($inputCampo);?>" autocomplete="off" onkeyup="clickDados<?=htmlspecialchars($inputCampo);?>(); " value="<?=htmlspecialchars(isset($_GET['idAtual']) ? $_GET['idAtual'] : '');?>" autofocus value="<?=htmlspecialchars(isset($_GET[$inputCampo]) ? $_GET[$inputCampo] : '');?>" />
+	<input type="hidden" name="digitadoBusGen" id="digitadoBusGen<?=htmlspecialchars($inputCampo);?>" value="" />
     <div style="margin-top:7px; float:left;">
-    <span id="desc_<?=$inputCampo;?>"><?=$_GET['label'];?></span>
-    <a href="javascript:;" onclick="<?=$onClick;?>" title="Buscar <? echo $tituloBusca;?>"><img src="images/Search.png" width="19" style="margin-top:-3px;" /></a>
+    <span id="desc_<?=htmlspecialchars($inputCampo);?>"><?=htmlspecialchars(isset($_GET['label']) ? $_GET['label'] : '');?></span>
+    <a href="javascript:;" onclick="<?=htmlspecialchars($onClick, ENT_QUOTES, 'UTF-8');?>" title="Buscar <?=htmlspecialchars($tituloBusca);?>"><img src="images/Search.png" width="19" style="margin-top:-3px;" /></a>
     </div>
     <iframe id="enviaBuscaGenerica<?=$inputCampo;?>" name="enviaBuscaGenerica<?=$inputCampo;?>" src="" style="width:0px;height:0px;border:0px;"></iframe>
-<?
+<?php
 }
 
 
@@ -348,6 +348,25 @@ return(floatval($valor)); }
 function texto($var) {
 	$var = str_replace('&#8217;',"'",$var);
 	return(htmlentities($var, ENT_COMPAT, 'utf-8'));
+}
+
+/**
+ * Gera token CSRF para proteção contra ataques Cross-Site Request Forgery
+ */
+function csrf_token() {
+    if (empty($_SESSION['csrf_token'])) {
+        $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+    }
+    return $_SESSION['csrf_token'];
+}
+
+/**
+ * Valida token CSRF
+ */
+function csrf_validate() {
+    return isset($_POST['csrf_token']) && 
+           isset($_SESSION['csrf_token']) && 
+           hash_equals($_SESSION['csrf_token'], $_POST['csrf_token']);
 }
 
 ///// FUNÇÃO PARA EXIBIÇÃO DE MESES
