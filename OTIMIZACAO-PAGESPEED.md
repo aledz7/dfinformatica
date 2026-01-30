@@ -26,10 +26,13 @@ Após desativar as opções acima:
 ## Otimizações implementadas no código
 
 - ✅ **CSS crítico inline** (~2KB) - first paint imediato
-- ✅ **CSS carregado via JavaScript** após DOMContentLoaded (evita bloqueio do Cloudflare)
+- ✅ **CSS carregado via JavaScript** após DOMContentLoaded
+- ✅ **Removido animate.css** - animações removidas para melhor performance
+- ✅ **Removido WOW.js e appear.js** - menos JavaScript para processar
+- ✅ **Removido lazysizes.js** - usando loading="lazy" nativo
+- ✅ **Lazy load do reCAPTCHA** - só carrega após interação do usuário
+- ✅ **IntersectionObserver** para contadores e progress (substitui appear.js)
 - ✅ **Preload de fontes** (Catamaran, Kumbh Sans) - reduz CLS
-- ✅ **min-height nos slider-btns** - reduz CLS
-- ✅ **contain: layout** no hero - isola repaint
 - ✅ **Logo em WebP** (~5KB vs ~15KB)
 - ✅ **font-display: swap** em todas as fontes
 - ✅ **Scripts com defer**

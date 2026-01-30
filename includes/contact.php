@@ -2,7 +2,7 @@
       <div class="container">
         <div class="row justify-content-between">
           <div class="col-xl-5 col-lg-6">
-            <form class="contact-area-form text-center wow fadeInRight delay-0-2s" name="contact-area-form"
+            <form class="contact-area-form text-center" name="contact-area-form"
               action="envia2.php" method="post">
               <input type="hidden" name="csrf_token" value="<?php echo htmlspecialchars(csrf_token()); ?>">
               <h4>Nós entramos em contato</h4>
@@ -15,7 +15,7 @@
             </form>
           </div>
           <div class="col-xl-5 col-lg-6">
-            <div class="contact-info-area text-white rmb-75 wow fadeInLeft delay-0-2s">
+            <div class="contact-info-area text-white rmb-75">
               <div class="section-title mb-55">
                 <h2>Agora seu sistema será profissional e sob-medida para a sua empresa, entre em contato <span>agora mesmo</span></h2>
               </div>
@@ -38,8 +38,8 @@
         </div>
       </div>
       <div class="contact-shapes">
-        <img class="shape circle lazyload" data-src="assets/images/shapes/slider-dots.png" alt="Software sob medida">
-        <img class="shape dots lazyload" data-src="assets/images/shapes/contact-dots.png" alt="Desenvolvimento de software">
-        <img class="shape wave-line lazyload" data-src="assets/images/shapes/contact-wave-line.png" alt="Empresa desenvolvedora de software">
+        <img class="shape circle" src="assets/images/shapes/slider-dots.png" loading="lazy" alt="Software sob medida">
+        <img class="shape dots" src="assets/images/shapes/contact-dots.png" loading="lazy" alt="Desenvolvimento de software">
+        <img class="shape wave-line" src="assets/images/shapes/contact-wave-line.png" loading="lazy" alt="Empresa desenvolvedora de software">
       </div>
     </section>

@@ -305,33 +305,27 @@
         
          /* 13. Fact Counter + Text Count - Our Success */
         if ($('.counter-text-wrap').length) {
-            $('.counter-text-wrap').appear(function () {
-                
-                var $t = $(this),
-                    n = $t.find(".count-text").attr("data-stop"),
-                    r = parseInt($t.find(".count-text").attr("data-speed"), 10);
-
-                if (!$t.hasClass("counted")) {
-                    $t.addClass("counted");
-                    $({
-                        countNum: $t.find(".count-text").text()
-                    }).animate({
-                        countNum: n
-                    }, {
-                        duration: r,
-                        easing: "linear",
-                        step: function () {
-                            $t.find(".count-text").text(Math.floor(this.countNum));
-                        },
-                        complete: function () {
-                            $t.find(".count-text").text(this.countNum);
+            // IntersectionObserver para ativar contadores quando visíveis
+            var counterObserver = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        var $t = $(entry.target),
+                            n = $t.find(".count-text").attr("data-stop"),
+                            r = parseInt($t.find(".count-text").attr("data-speed"), 10) || 1000;
+                        if (!$t.hasClass("counted")) {
+                            $t.addClass("counted");
+                            $({countNum: 0}).animate({countNum: n}, {
+                                duration: r,
+                                easing: "linear",
+                                step: function() { $t.find(".count-text").text(Math.floor(this.countNum)); },
+                                complete: function() { $t.find(".count-text").text(this.countNum); }
+                            });
                         }
-                    });
-                }
-
-            }, {
-                accY: 0
-            });
+                        counterObserver.unobserve(entry.target);
+                    }
+                });
+            }, {threshold: 0.5});
+            $('.counter-text-wrap').each(function() { counterObserver.observe(this); });
         }
         
         
@@ -383,82 +377,36 @@
         
         
         /* 17. Team skill Counter */
+		// Circle Progress - usando IntersectionObserver em vez de appear.js
 		if ($.fn.circleProgress) {
-			var progress1 = $('.one.progress-content')
-			if($.fn.circleProgress) {
-			  progress1.appear(function () {
-				progress1.circleProgress({
-					value: 0.8,
-					size: 130,
-                    thickness: 7,
-					fill: "#3180fc",
-                    lineCap: 'square',
-					emptyFill: "#eaf2ff",
-                    startAngle: -Math.PI / 4 * 2,
-					animation : { duration: 2000},
-				  }).on('circle-animation-progress', function(event, progress) {
-					$(this).find('h3').html(Math.round(89 * progress) + '<span>%</span>');
-				  });
-			  });
-			};
-		};
-		if ($.fn.circleProgress) {
-			var progress2 = $('.two.progress-content')
-			if($.fn.circleProgress) {
-			  progress2.appear(function () {
-				progress2.circleProgress({
-					value: 0.76,
-					size: 130,
-                    thickness: 7,
-					fill: "#f1b000",
-                    lineCap: 'square',
-                    emptyFill: "#fdf3d9",
-                    startAngle: -Math.PI / 4 * 2,
-					animation : { duration: 2000},
-				  }).on('circle-animation-progress', function(event, progress) {
-					$(this).find('h3').html(Math.round(76 * progress) + '<span>%</span>');
-				  });
-			  });
-			};
-		};
-		if ($.fn.circleProgress) {
-			var progress3 = $('.three.progress-content')
-			if($.fn.circleProgress) {
-			  progress3.appear(function () {
-				progress3.circleProgress({
-					value: 0.63,
-					size: 130,
-                    thickness: 7,
-					fill: "#16b4f2",
-                    lineCap: 'square',
-                    emptyFill: "#e7f7fe",
-                    startAngle: -Math.PI / 4 * 2,
-					animation : { duration: 2000},
-				  }).on('circle-animation-progress', function(event, progress) {
-					$(this).find('h3').html(Math.round(63 * progress) + '<span>%</span>');
-				  });
-			  });
-			};
-		};
-		if ($.fn.circleProgress) {
-			var progress4 = $('.four.progress-content')
-			if($.fn.circleProgress) {
-			  progress4.appear(function () {
-				progress4.circleProgress({
-					value: 0.58,
-					size: 130,
-                    thickness: 7,
-					fill: "#c400fc",
-                    lineCap: 'square',
-                    emptyFill: "#f9e5ff",
-                    startAngle: -Math.PI / 4 * 2,
-					animation : { duration: 2000},
-				  }).on('circle-animation-progress', function(event, progress) {
-					$(this).find('h3').html(Math.round(58 * progress) + '<span>%</span>');
-				  });
-			  });
-			};
-		};
+			var progressConfigs = [
+				{selector: '.one.progress-content', value: 0.8, fill: "#3180fc", emptyFill: "#eaf2ff", percent: 89},
+				{selector: '.two.progress-content', value: 0.76, fill: "#f1b000", emptyFill: "#fdf3d9", percent: 76},
+				{selector: '.three.progress-content', value: 0.63, fill: "#16b4f2", emptyFill: "#e7f7fe", percent: 63},
+				{selector: '.four.progress-content', value: 0.58, fill: "#c400fc", emptyFill: "#f9e5ff", percent: 58}
+			];
+			var progressObserver = new IntersectionObserver(function(entries) {
+				entries.forEach(function(entry) {
+					if (entry.isIntersecting && !$(entry.target).data('animated')) {
+						$(entry.target).data('animated', true);
+						var cfg = $(entry.target).data('cfg');
+						$(entry.target).circleProgress({
+							value: cfg.value, size: 130, thickness: 7, fill: cfg.fill,
+							lineCap: 'square', emptyFill: cfg.emptyFill, startAngle: -Math.PI / 4 * 2, animation: {duration: 2000}
+						}).on('circle-animation-progress', function(event, progress) {
+							$(this).find('h3').html(Math.round(cfg.percent * progress) + '<span>%</span>');
+						});
+						progressObserver.unobserve(entry.target);
+					}
+				});
+			}, {threshold: 0.5});
+			progressConfigs.forEach(function(cfg) {
+				$(cfg.selector).each(function() {
+					$(this).data('cfg', cfg);
+					progressObserver.observe(this);
+				});
+			});
+		}
         
         
         // 19. Quantity Number js
@@ -490,17 +438,7 @@
         $('.select').niceSelect();
         
         
-        // 22. WOW Animation
-        if ($('.wow').length) {
-            var wow = new WOW({
-                boxClass: 'wow', // animated element css class (default is wow)
-                animateClass: 'animated', // animation css class (default is animated)
-                offset: 0, // distance to the element when triggering the animation (default is 0)
-                mobile: false, // trigger animations on mobile devices (default is true)
-                live: true // act on asynchronously loaded content (default is true)
-            });
-            wow.init();
-        }
+        // 22. WOW Animation - REMOVIDO para melhorar PageSpeed
         
         
         // 23. OnePage Nav Scroll - apenas para links com âncora (#)

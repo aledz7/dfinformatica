@@ -13,7 +13,7 @@ include 'includes/header.php';
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-8">
-            <div class="hero-content-three rmb-55 wow fadeInUp delay-0-2s">
+            <div class="hero-content-three rmb-55">
               <?php include 'includes/breadcrumb.php'; ?>
               <span class="sub-title mb-20">DF Informática</span>
               <h1>Empresas de Software em Florianópolis</h1>

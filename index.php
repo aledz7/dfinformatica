@@ -315,53 +315,53 @@ include 'includes/head.php';
       <div class="container">
         <div class="main-slider-dots"></div>
       </div>
-      <div class="slider-shapes"> <img class="shape dots one lazyload" data-src="assets/images/shapes/slider-dots.png"
-          alt="Criação de Sistemas Brasilia"> <img class="shape dots two lazyload"
-          data-src="assets/images/shapes/slider-dots.png" alt="Criação de Sistemas sob medida"> <img
-          class="shape wave-line lazyload" data-src="assets/images/shapes/slider-wave-line.png"
-          alt="Criação de sistemas df"> <img class="shape circle lazyload"
-          data-src="assets/images/shapes/slider-circle.png" alt="criação de sistemas no DF"> </div>
+      <div class="slider-shapes"> <img class="shape dots one" loading="lazy" src="assets/images/shapes/slider-dots.png"
+          alt="Criação de Sistemas Brasilia"> <img class="shape dots two" loading="lazy"
+          src="assets/images/shapes/slider-dots.png" alt="Criação de Sistemas sob medida"> <img
+          class="shape wave-line" loading="lazy" src="assets/images/shapes/slider-wave-line.png"
+          alt="Criação de sistemas df"> <img class="shape circle" loading="lazy"
+          src="assets/images/shapes/slider-circle.png" alt="criação de sistemas no DF"> </div>
     </section>
     <!-- Slider Section End -->
 
     <!-- Core Feature start -->
     <section class="feature-area-five bgc-lighter pt-100 pb-70">
       <div class="container">
-        <div class="section-title text-center mb-60 wow fadeInUp delay-0-2s"> <span class="sub-title mb-10">Identidade
+        <div class="section-title text-center mb-60"> <span class="sub-title mb-10">Identidade
             Visual</span>
           <h2>Recursos incríveis</h2>
         </div>
         <div class="row row-cols-xl-6 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center">
           <!--
-        <div class="col wow fadeInUp delay-0-2s">
+        <div class="col">
           <div class="feature-item-five"> <i class="flaticon-responsive"></i>
             <h5>Design 100% Mobile</h5>
           </div>
         </div>
 -->
-          <div class="col wow fadeInUp delay-0-3s">
+          <div class="col">
             <div class="feature-item-five"> <i class="flaticon-feature"></i>
               <h5>Personalização Poderosa</h5>
             </div>
           </div>
           <!--
-        <div class="col wow fadeInUp delay-0-4s">
+        <div class="col">
           <div class="feature-item-five"> <i class="flaticon-aim"></i>
             <h5>Animações legais e modernas</h5>
           </div>
         </div>
 -->
-          <div class="col wow fadeInUp delay-0-5s">
+          <div class="col">
             <div class="feature-item-five"> <i class="flaticon-seo"></i>
               <h5>Estratégia e Usabilidade</h5>
             </div>
           </div>
-          <div class="col wow fadeInUp delay-0-6s">
+          <div class="col">
             <div class="feature-item-five"> <i class="flaticon-search-location"></i>
               <h5>Melhor Suporte Técnico</h5>
             </div>
           </div>
-          <div class="col wow fadeInUp delay-0-7s">
+          <div class="col">
             <div class="feature-item-five"> <i class="flaticon-settings"></i>
               <h5>Automação de Processos</h5>
             </div>
@@ -376,13 +376,13 @@ include 'includes/head.php';
       <div class="container">
         <div class="row justify-content-between align-items-center">
           <div class="col-lg-5">
-            <div class="about-image-one bg-squire-shape rmb-85 wow fadeInUp delay-0-2s"> <img class="lazyload"
-                data-src="assets/images/about/about-one.jpg" alt="Saiba mais sobre nossa agência de marketing DF"> <img
-                class="image-left lazyload" data-src="assets/images/shapes/image-left.png"
+            <div class="about-image-one bg-squire-shape rmb-85"> <img loading="lazy"
+                src="assets/images/about/about-one.jpg" alt="Saiba mais sobre nossa agência de marketing DF"> <img
+                class="image-left" loading="lazy" src="assets/images/shapes/image-left.png"
                 alt="Agência de Marketing Web DF"> </div>
           </div>
           <div class="col-xl-6 col-lg-7">
-            <div class="about-content-one wow fadeInUp delay-0-4s">
+            <div class="about-content-one">
               <div class="section-title mb-45"> <span class="sub-title mb-15">Sobre Nós</span>
                 <h2>Conheça Mais</h2>
               </div>
@@ -423,7 +423,7 @@ include 'includes/head.php';
         <div class="container">
           <div class="row justify-content-between align-items-center">
             <div class="col-lg-7">
-              <div class="statistics-three-content rmb-65 wow fadeInRight delay-0-2s">
+              <div class="statistics-three-content rmb-65">
                 <div class="row justify-content-center justify-content-xl-start">
                   <div class="col-xl-9">
                     <div class="section-title mb-60"> <span class="sub-title mb-15">Estatísticas da Empresa</span>
@@ -431,21 +431,21 @@ include 'includes/head.php';
                     </div>
                   </div>
                   <div class="col-xl-4 col-lg-6 col-md-4 col-sm-6">
-                    <div class="counter-item style-two counter-text-wrap wow fadeInRight delay-0-3s"> <i
+                    <div class="counter-item style-two counter-text-wrap"> <i
                         class="flaticon-startup"></i> <span class="count-text" data-speed="3000" data-stop="800">0</span>
                       <span class="counter-title">Projetos concluídos</span>
                       <!--<p>On the other denonce with righteous indin</p>-->
                     </div>
                   </div>
                   <div class="col-xl-4 col-lg-6 col-md-4 col-sm-6">
-                    <div class="counter-item style-two counter-text-wrap wow fadeInRight delay-0-5s"> <i
+                    <div class="counter-item style-two counter-text-wrap"> <i
                         class="flaticon-global"></i> <span class="count-text" data-speed="3000" data-stop="100">0</span>
                       <span class="counter-title">Sistemas desenvolvidos</span>
                       <!--                                        <p>On the other denonce with righteous indin</p>-->
                     </div>
                   </div>
                   <div class="col-xl-4 col-lg-6 col-md-4 col-sm-6">
-                    <div class="counter-item style-two counter-text-wrap wow fadeInRight delay-0-7s"> <i
+                    <div class="counter-item style-two counter-text-wrap"> <i
                         class="flaticon-rating"></i> <span class="count-text" data-speed="3000" data-stop="15">0</span>
                       <span class="counter-title">Anos de experiência</span>
                       <!--                                        <p>On the other denonce with righteous indin</p>-->
@@ -455,10 +455,10 @@ include 'includes/head.php';
               </div>
             </div>
             <div class="col-lg-5">
-              <div class="statistics-three-image bg-squire-shape mb-30 wow fadeInLeft delay-0-3s"> <img class="lazyload"
-                  data-src="assets/images/about/statictics.jpg"
-                  alt="Conheça mais sobre desenvolvimento de sistemas e marketing"> <img class="image-right lazyload"
-                  data-src="assets/images/shapes/image-right.png" alt="Desenvolvimento de e-commerce"> </div>
+              <div class="statistics-three-image bg-squire-shape mb-30"> <img loading="lazy"
+                  src="assets/images/about/statictics.jpg"
+                  alt="Conheça mais sobre desenvolvimento de sistemas e marketing"> <img class="image-right" loading="lazy"
+                  src="assets/images/shapes/image-right.png" alt="Desenvolvimento de e-commerce"> </div>
             </div>
           </div>
         </div>
@@ -470,7 +470,7 @@ include 'includes/head.php';
     <section id="featured"
       class="design-feature-area overflow-hidden pt-130 pb-100 text-white bgc-black-with-lighting rel z-1">
       <div class="container">
-        <div class="section-title text-center mb-60 wow fadeInUp delay-0-2s"> <span class="sub-title mb-10">Um sistema
+        <div class="section-title text-center mb-60"> <span class="sub-title mb-10">Um sistema
             ou app profissional e sob-medida!</span>
           <h2>O que fornecemos para seu o sistema ou app:</h2>
         </div>
@@ -479,7 +479,7 @@ include 'includes/head.php';
             <div class="feature-left">
               <div class="row">
                 <div class="col-lg-12 col-sm-6">
-                  <div class="service-item style-three wow fadeInRight delay-0-2s">
+                  <div class="service-item style-three">
                     <div class="icon"><i class="flaticon-design"></i></div>
                     <div class="content">
                       <h4>Firewall e Criptografia SSL</h4>
@@ -488,7 +488,7 @@ include 'includes/head.php';
                   </div>
                 </div>
                 <div class="col-lg-12 col-sm-6">
-                  <div class="service-item style-three wow fadeInRight delay-0-3s">
+                  <div class="service-item style-three">
                     <div class="icon"><i class="flaticon-web-page"></i></div>
                     <div class="content">
                       <h4>Automação</h4>
@@ -501,14 +501,14 @@ include 'includes/head.php';
           </div>
           <div class="col-lg-6">
             <div class="feature-middle rmt-30">
-              <div class="image wow fadeInUp delay-0-2s">
+              <div class="image">
                 <!--                                <img class="circle-text" src="assets/images/shapes/feature-image-top.png" alt="Text">-->
-                <img class="round lazyload" data-src="assets/images/features/feature-middle.png"
+                <img class="round" loading="lazy" src="assets/images/features/feature-middle.png"
                   alt="Construção de sistemas">
               </div>
               <div class="row">
                 <div class="col-sm-6">
-                  <div class="service-item style-three wow fadeInUp delay-0-3s">
+                  <div class="service-item style-three">
                     <div class="icon"><i class="flaticon-online"></i></div>
                     <div class="content">
                       <h4>Relatórios Gerenciais</h4>
@@ -517,7 +517,7 @@ include 'includes/head.php';
                   </div>
                 </div>
                 <div class="col-sm-6">
-                  <div class="service-item style-three mt-30 wow fadeInUp delay-0-4s">
+                  <div class="service-item style-three mt-30">
                     <div class="icon"><i class="flaticon-web-programming"></i></div>
                     <div class="content">
                       <h4>Do seu jeio. Você define como será seu sistema</h4>
@@ -532,7 +532,7 @@ include 'includes/head.php';
             <div class="feature-right">
               <div class="row">
                 <div class="col-lg-12 col-sm-6">
-                  <div class="service-item style-three mt-100 wow fadeInLeft delay-0-2s">
+                  <div class="service-item style-three mt-100">
                     <div class="icon"><i class="flaticon-graphic-design"></i></div>
                     <div class="content">
                       <h4>Experiência do usuário e design</h4>
@@ -541,7 +541,7 @@ include 'includes/head.php';
                   </div>
                 </div>
                 <div class="col-lg-12 col-sm-6">
-                  <div class="service-item style-three wow fadeInLeft delay-0-3s">
+                  <div class="service-item style-three">
                     <div class="icon"><i class="flaticon-user-experience"></i></div>
                     <div class="content">
                       <h4>Emissão de NFE, NFSe, NFCe, Cte e MDFe</h4>
@@ -554,9 +554,9 @@ include 'includes/head.php';
           </div>
         </div>
       </div>
-      <div class="design-feature-shapes"> <img class="shape dots lazyload"
-          data-src="assets/images/shapes/slider-dots.png" alt="Contratar web design"> <img
-          class="shape wave-line lazyload" data-src="assets/images/shapes/feature-wave-line.png"
+      <div class="design-feature-shapes"> <img class="shape dots" loading="lazy"
+          src="assets/images/shapes/slider-dots.png" alt="Contratar web design"> <img
+          class="shape wave-line" loading="lazy" src="assets/images/shapes/feature-wave-line.png"
           alt="Construir software"> </div>
     </section>
     <!-- Design Featured End -->
@@ -566,7 +566,7 @@ include 'includes/head.php';
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg10">
-            <div class="section-title text-center mb-50 wow fadeInUp delay-0-2s"> <span class="sub-title mb-15">Nossos
+            <div class="section-title text-center mb-50"> <span class="sub-title mb-15">Nossos
                 Trabalhos</span>
               <h2>Clientes que confiam no nosso trabalho</h2>
             </div>
@@ -574,8 +574,8 @@ include 'includes/head.php';
         </div>
       </div>
       <div class="project-three-active">
-        <div class="project-item style-two wow fadeInUp delay-0-2s">
-          <div class="project-iamge"> <img class="lazyload" data-src="portfolio/atlas-colchoes.png"
+        <div class="project-item style-two">
+          <div class="project-iamge"> <img loading="lazy" src="portfolio/atlas-colchoes.png"
               alt="Desenvolvimento do sistema Minha Nossa"></img>
             <div class="project-over"> <a class="details-btn" target="_blank"><i class="far fa-arrow-right"></i></a>
             </div>
@@ -585,8 +585,8 @@ include 'includes/head.php';
             <span class="category">Sistema</span>
           </div>
         </div>
-        <div class="project-item style-two wow fadeInUp delay-0-4s">
-          <div class="project-iamge"> <img class="lazyload" data-src="portfolio/britanica-turismo.png"
+        <div class="project-item style-two">
+          <div class="project-iamge"> <img loading="lazy" src="portfolio/britanica-turismo.png"
               alt="Desenvolvimento do sistema Capital Vans"></img>
             <div class="project-over"> <a class="details-btn" target="_blank"><i class="far fa-arrow-right"></i></a>
             </div>
@@ -596,8 +596,8 @@ include 'includes/head.php';
             <span class="category">Sistema</span>
           </div>
         </div>
-        <div class="project-item style-two wow fadeInUp delay-0-6s">
-          <div class="project-iamge"> <img class="lazyload" data-src="portfolio/otc-doc.png"
+        <div class="project-item style-two">
+          <div class="project-iamge"> <img loading="lazy" src="portfolio/otc-doc.png"
               alt="Desenvolvimento do sistema Frozen Fit"></img>
             <div class="project-over"> <a class="details-btn" target="_blank"><i class="far fa-arrow-right"></i></a>
             </div>
@@ -607,8 +607,8 @@ include 'includes/head.php';
             <span class="category">Sistema</span>
           </div>
         </div>
-        <div class="project-item style-two wow fadeInUp delay-0-8s">
-          <div class="project-iamge"> <img class="lazyload" data-src="portfolio/methodos.png" alt="Project">
+        <div class="project-item style-two">
+          <div class="project-iamge"> <img loading="lazy" src="portfolio/methodos.png" alt="Project">
             <div class="project-over"> <a class="details-btn"><i class="far fa-arrow-right"></i></a> </div>
           </div>
           <div class="project-content">
@@ -616,8 +616,8 @@ include 'includes/head.php';
             <span class="category">Sistema</span>
           </div>
         </div>
-        <div class="project-item style-two wow fadeInUp delay-0-8s">
-          <div class="project-iamge"> <img class="lazyload" data-src="portfolio/reidoscapachos.png" alt="Project">
+        <div class="project-item style-two">
+          <div class="project-iamge"> <img loading="lazy" src="portfolio/reidoscapachos.png" alt="Project">
             <div class="project-over"> <a class="details-btn"><i class="far fa-arrow-right"></i></a> </div>
           </div>
           <div class="project-content">
@@ -637,7 +637,7 @@ include 'includes/head.php';
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-10">
-            <div class="section-title text-center mb-55 wow fadeInUp delay-0-2s"> <span class="sub-title mb-15">Processo
+            <div class="section-title text-center mb-55"> <span class="sub-title mb-15">Processo
                 de trabalho</span>
               <h2>Como funciona</h2>
             </div>
@@ -646,35 +646,35 @@ include 'includes/head.php';
         <div class="work-process-wrap rel z-1">
           <div class="row justify-content-between">
             <div class="col-xl-3 col-lg-5 col-sm-6">
-              <div class="work-process-item mt-30 wow fadeInUp delay-0-2s">
+              <div class="work-process-item mt-30">
                 <div class="icon"> <span class="number">01</span> <i class="flaticon-optimization"></i> </div>
                 <h4>Coleta de informações</h4>
                 <p>Coletamos suas informações e ideias.</p>
               </div>
             </div>
             <div class="col-xl-3 col-lg-5 col-sm-6">
-              <div class="work-process-item wow fadeInUp delay-0-4s">
+              <div class="work-process-item">
                 <div class="icon"> <span class="number">02</span> <i class="flaticon-link"></i> </div>
                 <h4>Planejamento de ideias</h4>
                 <p>Construção prévia das telas do sistema.</p>
               </div>
             </div>
             <div class="col-xl-3 col-lg-5 col-sm-6">
-              <div class="work-process-item mt-55 wow fadeInUp delay-0-6s">
+              <div class="work-process-item mt-55">
                 <div class="icon"> <span class="number">03</span> <i class="flaticon-data"></i> </div>
                 <h4>Análise de projeto</h4>
                 <p>Análise para alterações e aprovação do layout.</p>
               </div>
             </div>
             <div class="col-xl-3 col-lg-5 col-sm-6">
-              <div class="work-process-item mt-45 wow fadeInUp delay-0-8s">
+              <div class="work-process-item mt-45">
                 <div class="icon"> <span class="number">04</span> <i class="flaticon-star"></i> </div>
                 <h4>Teste & Lançamento</h4>
                 <p>Teste de todas funcionalidades, caso ok. Lançamento do sistema.</p>
               </div>
             </div>
           </div>
-          <div class="work-process-shape"> <img class="lazyload" data-src="assets/images/shapes/worp-process-step.png"
+          <div class="work-process-shape"> <img loading="lazy" src="assets/images/shapes/worp-process-step.png"
               alt="Criação de sistemas e app sob-medida"> </div>
         </div>
       </div>
@@ -687,14 +687,14 @@ include 'includes/head.php';
         <div class="cta-inner bgs-cover" style="background-image: url(assets/images/background/cta-bg.webp);">
           <div class="row">
             <div class="col-xl-6">
-              <div class="cta-item wow fadeInLeft delay-0-2s">
+              <div class="cta-item">
                 <div class="icon"><i class="flaticon-target"></i></div>
                 <h4>Tem algum projeto em mente?</h4>
                 <a href="#contact" class="details-btn"><i class="far fa-arrow-right"></i></a>
               </div>
             </div>
             <div class="col-xl-6">
-              <div class="cta-item wow fadeInRight delay-0-2s">
+              <div class="cta-item">
                 <div class="icon"><i class="flaticon-target"></i></div>
                 <h4>Precisa de Gestão para a sua empresa?</h4>
                 <a href="#contact" class="details-btn" title="Gestão para a sua empresa."><i
@@ -714,7 +714,7 @@ include 'includes/head.php';
       <div class="container">
         <div class="row justify-content-between">
           <div class="col-xl-5 col-lg-6">
-            <form class="contact-area-form text-center wow fadeInRight delay-0-2s" name="contact-area-form"
+            <form class="contact-area-form text-center" name="contact-area-form"
               action="envia2.php" method="post">
               <input type="hidden" name="csrf_token" value="<?php echo htmlspecialchars(csrf_token()); ?>">
               <h4>Nós entramos em contato</h4>
@@ -734,7 +734,7 @@ include 'includes/head.php';
             </form>
           </div>
           <div class="col-xl-5 col-lg-6">
-            <div class="contact-info-area text-white rmb-75 wow fadeInLeft delay-0-2s">
+            <div class="contact-info-area text-white rmb-75">
               <div class="section-title mb-55">
                 <h2>Agora seu sistema será profissional e sob-medida para a sua empresa, entre em contato <span>agora
                     mesmo</span></h2>
@@ -759,10 +759,10 @@ include 'includes/head.php';
           </div>
         </div>
       </div>
-      <div class="contact-shapes"> <img class="shape circle lazyload" data-src="assets/images/shapes/slider-dots.png"
-          alt="Criamos Softwares"> <img class="shape dots lazyload" data-src="assets/images/shapes/contact-dots.png"
-          alt="Criar sistema comercial"> <img class="shape wave-line lazyload"
-          data-src="assets/images/shapes/contact-wave-line.png" alt="Criar sistema de compras"> </div>
+      <div class="contact-shapes"> <img class="shape circle" loading="lazy" src="assets/images/shapes/slider-dots.png"
+          alt="Criamos Softwares"> <img class="shape dots" loading="lazy" src="assets/images/shapes/contact-dots.png"
+          alt="Criar sistema comercial"> <img class="shape wave-line" loading="lazy"
+          src="assets/images/shapes/contact-wave-line.png" alt="Criar sistema de compras"> </div>
     </section>
     <!-- Contact Area End -->
 
@@ -770,7 +770,7 @@ include 'includes/head.php';
     <!--
   <section class="testimonial-area-two rel z-1 mt-130 mb-120" id="depoimentos">
     <div class="container for-middle-border">
-      <div class="row justify-content-between align-items-center pb-90 rpb-35 wow fadeInUp delay-0-2s">
+      <div class="row justify-content-between align-items-center pb-90 rpb-35">
         <div class="col-xl-7 col-lg-8">
           <div class="section-title"> <span class="sub-title mb-15">Qual é a opinião dos clientes?</span>
             <h2>Feedback dos clientes</h2>
@@ -784,22 +784,22 @@ include 'includes/head.php';
         </div>
       </div>
       <div class="testimonial-two-active">
-        <div class="testimonial-item-two wow fadeInUp delay-0-2s">
-          <div class="testimonial-author"> <img class="lazyload"  data-src="assets/images/feedback/testimonial1.jpg" alt="Sistemas sob medida"> </div>
+        <div class="testimonial-item-two">
+          <div class="testimonial-author"> <img loading="lazy"  src="assets/images/feedback/testimonial1.jpg" alt="Sistemas sob medida"> </div>
           <div class="testimonial-content">
             <p>Ótima empresa, resolveram meus problemas e consegui uma grande variedade de clientes</p>
             <div class="author-description"> <span class="h5">Bruno</span> <span class="designation">Atlas Colchões.</span> </div>
           </div>
         </div>
-        <div class="testimonial-item-two wow fadeInUp delay-0-4s">
-          <div class="testimonial-author"> <img class="lazyload"  data-src="assets/images/feedback/testimonial2.jpg" alt="Criação de sites profissionais"> </div>
+        <div class="testimonial-item-two">
+          <div class="testimonial-author"> <img loading="lazy"  src="assets/images/feedback/testimonial2.jpg" alt="Criação de sites profissionais"> </div>
           <div class="testimonial-content">
             <p>Como meus serviços necessitam de uma demanda grande de clientela, contratei os serviços da DF Informática e consegui o que eu queria.</p>
             <div class="author-description"> <span class="h5">Vitor</span> <span class="designation">Capital Vans</span> </div>
           </div>
         </div>
-        <div class="testimonial-item-two wow fadeInUp delay-0-4s">
-          <div class="testimonial-author"> <img class="lazyload"  data-src="assets/images/feedback/testimonial2.jpg" alt="Criador de lojas virtuais"> </div>
+        <div class="testimonial-item-two">
+          <div class="testimonial-author"> <img loading="lazy"  src="assets/images/feedback/testimonial2.jpg" alt="Criador de lojas virtuais"> </div>
           <div class="testimonial-content">
             <p>Me ajudou bastante quando comecei, consegui capatar uma variedade enorme e hoje graças a Deus tenho meus clientes fixos.</p>
             <div class="author-description"> <span class="h5">Ricardo Sousa</span> <span class="designation">Dono de E-commerce</span> </div>
@@ -816,14 +816,14 @@ include 'includes/head.php';
 <div class="container">
    <div class="row justify-content-center">
        <div class="col-lg-10">
-           <div class="section-title text-center mb-60 wow fadeInUp delay-0-2s"> <span class="sub-title mb-15">Obtenha todas as atualizações</span>
+           <div class="section-title text-center mb-60"> <span class="sub-title mb-15">Obtenha todas as atualizações</span>
                <h2>Leia as últimas notícias e blog</h2>
            </div>
        </div>
    </div>
    <div class="row large-gap">
        <div class="col-lg-6">
-           <div class="blog-item wow fadeInUp delay-0-2s">
+           <div class="blog-item">
                <div class="image"> <img src="assets/images/blog/blog1.jpg" alt="Blog"> </div>
                <div class="content"> <span class="date"><i class="far fa-calendar-alt"></i> 25 Março 2022</span>
                    <h4><a href="#">Maneiras fáceis de incorporar o feedback do cliente</a></h4>
@@ -834,7 +834,7 @@ include 'includes/head.php';
            </div>
        </div>
        <div class="col-lg-6">
-           <div class="blog-item wow fadeInUp delay-0-4s">
+           <div class="blog-item">
                <div class="image"> <img src="assets/images/blog/blog2.jpg" alt="Blog"> </div>
                <div class="content"> <span class="date"><i class="far fa-calendar-alt"></i> 27 Março 2022</span>
                    <h4><a href="#">Como criar um site moderno para o seu negócio?</a></h4>
@@ -845,7 +845,7 @@ include 'includes/head.php';
            </div>
        </div>
        <div class="col-lg-6">
-           <div class="blog-item wow fadeInUp delay-0-2s">
+           <div class="blog-item">
                <div class="image"> <img src="assets/images/blog/blog3.jpg" alt="Blog"> </div>
                <div class="content"> <span class="date"><i class="far fa-calendar-alt"></i> 25 Março 2022</span>
                    <h4><a href="#">Como trabalhar o marketing digital nas redes sociais?</a></h4>
@@ -856,7 +856,7 @@ include 'includes/head.php';
            </div>
        </div>
        <div class="col-lg-6">
-           <div class="blog-item wow fadeInUp delay-0-4s">
+           <div class="blog-item">
                <div class="image"> <img src="assets/images/blog/blog4.jpg" alt="Blog"> </div>
                <div class="content"> <span class="date"><i class="far fa-calendar-alt"></i> 25 Março 2022</span>
                    <h4><a href="#">Maneiras fáceis de incorporar o feedback do cliente</a></h4>
@@ -876,9 +876,9 @@ include 'includes/head.php';
       <div class="container">
         <div class="row justify-content-xl-between justify-content-center">
           <div class="col-xl-4 col-lg-5 col-md-6">
-            <div class="footer-widget widget_about me-md-5 wow fadeInUp delay-0-2s">
-              <div class="footer-logo mb-25"> <a href="."><img class="lazyload"
-                    data-src="assets/images/logos/logo1-sem-fundo2-526w.png" alt="Criar sistema empresarial"></a> </div>
+            <div class="footer-widget widget_about me-md-5">
+              <div class="footer-logo mb-25"> <a href="."><img loading="lazy"
+                    src="assets/images/logos/logo1-sem-fundo2-526w.png" alt="Criar sistema empresarial"></a> </div>
               <p>DF Informática fazendo a diferença na sua vida de empreendedor, mudando estilo e funcionalidade do seu
                 sistema para melhor.</p>
               <div class="social-style-two pt-5"> <a href="https://www.facebook.com/dfinformatica.com.br"
@@ -891,7 +891,7 @@ include 'includes/head.php';
             </div>
           </div>
           <div class="col-xl-4 col-md-6">
-            <div class="footer-widget widget_nav_menu wow fadeInUp delay-0-4s">
+            <div class="footer-widget widget_nav_menu">
               <h4 class="footer-title">Links Rápidos</h4>
               <ul class="list-style-two">
                 <li><a href="index.php">Home</a></li>
@@ -919,7 +919,7 @@ include 'includes/head.php';
             </div>
           </div>
           <div class="col-xl-4 col-lg-6 col-md-8">
-            <div class="footer-widget widget_newsletter wow fadeInUp delay-0-6s">
+            <div class="footer-widget widget_newsletter">
               <h4 class="footer-title">Newsletter</h4>
               <p>Inscreva-se para obter mais atualizações</p>
               <form action="#">
@@ -968,7 +968,6 @@ include 'includes/head.php';
 
   <script src="assets/js/jquery-3.6.0.min.js" defer></script>
   <script src="assets/js/bootstrap.min.js" defer></script>
-  <script src="assets/js/appear.min.js" defer></script>
   <script src="assets/js/slick.min.js" defer></script>
   <script src="assets/js/jquery.magnific-popup.min.js" defer></script>
   <script src="assets/js/jquery.nice-select.min.js" defer></script>
@@ -976,9 +975,7 @@ include 'includes/head.php';
   <script src="assets/js/jquery.animatedheadline.min.js" defer></script>
   <script src="assets/js/circle-progress.min.js" defer></script>
   <script src="assets/js/isotope.pkgd.min.js" defer></script>
-  <script src="assets/js/wow.min.js" defer></script>
   <script src="assets/js/script.js" defer></script>
-  <script src="assets/js/lazysizes.min.js" async></script>
   <script>
     $(document).ready(function () {
       setTimeout(function () {
@@ -988,11 +985,15 @@ include 'includes/head.php';
         $("#cookieConsent").fadeOut(200);
       });
     });
+    // Lazy load reCAPTCHA - só carrega quando necessário
+    var recaptchaLoaded=false;
+    function loadRecaptcha(){if(recaptchaLoaded)return;recaptchaLoaded=true;var s=document.createElement('script');s.src='https://www.google.com/recaptcha/api.js';s.async=true;s.defer=true;document.head.appendChild(s);}
+    ['scroll','click','touchstart','mousemove'].forEach(function(e){document.addEventListener(e,loadRecaptcha,{once:true,passive:true});});
+    setTimeout(loadRecaptcha,5000);
   </script>
-
-  <script type="text/javascript">
+  <script>
     function valida() {
-      if (grecaptcha.getResponse() == "") {
+      if (typeof grecaptcha === 'undefined' || grecaptcha.getResponse() == "") {
         alert("captcha errado. Favor tente de novo!");
         return false;
       }
