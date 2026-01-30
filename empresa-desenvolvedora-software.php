@@ -3,15 +3,17 @@ include 'includes/config.php';
 $page_title = 'Empresa Desenvolvedora de Software | DF Informática';
 $page_description = 'Empresa desenvolvedora de software em Brasília DF. Empresas que desenvolvem software, desenvolvedoras de software e desenvolvedor de sistemas. Mais de 15 anos de experiência.';
 $page_canonical = $site_url . '/empresa-desenvolvedora-software.php';
+$page_breadcrumb_name = 'Empresa Desenvolvedora de Software';
 include 'includes/head.php';
 $current_page = 'services';
 include 'includes/header.php';
 ?>
-    <section class="hero-area-three pt-210 rpt-150 pb-130 rpb-100 rel z-1">
+    <section class="hero-area-three bgc-black-with-lighting pt-210 rpt-150 pb-130 rpb-100 rel z-1">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-8">
             <div class="hero-content-three rmb-55 wow fadeInUp delay-0-2s">
+              <?php include 'includes/breadcrumb.php'; ?>
               <span class="sub-title mb-20">DF Informática</span>
               <h1>Empresa Desenvolvedora de Software</h1>
               <p class="mb-35">Somos uma <strong>empresa desenvolvedora de software</strong> com mais de 15 anos de experiência. Como <strong>empresas que desenvolvem software</strong>, somos referência em <strong>software sob medida</strong>, <strong>sistemas personalizados</strong> e <strong>criação de software</strong> em Brasília DF.</p>

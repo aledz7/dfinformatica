@@ -3,15 +3,17 @@ include 'includes/config.php';
 $page_title = 'Desenvolvedor de Sistemas | DF Informática';
 $page_description = 'Desenvolvedor de sistemas e empresa desenvolvedora de software em Brasília DF. Desenvolvedores de sistemas especializados em software sob medida e criação de sistemas personalizados.';
 $page_canonical = $site_url . '/desenvolvedor-sistemas.php';
+$page_breadcrumb_name = 'Desenvolvedor de Sistemas';
 include 'includes/head.php';
 $current_page = 'services';
 include 'includes/header.php';
 ?>
-    <section class="hero-area-three pt-210 rpt-150 pb-130 rpb-100 rel z-1">
+    <section class="hero-area-three bgc-black-with-lighting pt-210 rpt-150 pb-130 rpb-100 rel z-1">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-8">
             <div class="hero-content-three rmb-55 wow fadeInUp delay-0-2s">
+              <?php include 'includes/breadcrumb.php'; ?>
               <span class="sub-title mb-20">DF Informática</span>
               <h1>Desenvolvedor de Sistemas</h1>
               <p class="mb-35">Somos <strong>desenvolvedor de sistemas</strong> e <strong>empresa desenvolvedora de software</strong> em Brasília DF. Nossa equipe de <strong>desenvolvedores de sistemas</strong> cria <strong>software sob medida</strong>, <strong>sistemas personalizados</strong> e <strong>criação de software</strong> para empresas.</p>

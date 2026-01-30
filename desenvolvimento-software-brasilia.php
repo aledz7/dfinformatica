@@ -3,16 +3,18 @@ include 'includes/config.php';
 $page_title = 'Desenvolvimento de Software em Brasília DF | DF Informática';
 $page_description = 'Desenvolvimento de software em Brasília DF. Empresa desenvolvedora de software sob medida na capital federal. Criação de sistemas e software personalizado em Brasília.';
 $page_canonical = $site_url . '/desenvolvimento-software-brasilia.php';
+$page_breadcrumb_name = 'Desenvolvimento de Software em Brasília';
 include 'includes/head.php';
 $current_page = 'services';
 include 'includes/header.php';
 ?>
     <!-- Hero Section -->
-    <section class="hero-area-three pt-210 rpt-150 pb-130 rpb-100 rel z-1">
+    <section class="hero-area-three bgc-black-with-lighting pt-210 rpt-150 pb-130 rpb-100 rel z-1">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-8">
             <div class="hero-content-three rmb-55 wow fadeInUp delay-0-2s">
+              <?php include 'includes/breadcrumb.php'; ?>
               <span class="sub-title mb-20">DF Informática - Brasília DF</span>
               <h1>Desenvolvimento de Software em Brasília DF</h1>
               <p class="mb-35">Somos especialistas em <strong>desenvolvimento de software em Brasília DF</strong>. Como empresa sediada na capital federal, atendemos empresas locais e de todo o Brasil com <strong>software sob medida</strong> e <strong>sistemas personalizados</strong>.</p>

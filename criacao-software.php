@@ -3,16 +3,18 @@ include 'includes/config.php';
 $page_title = 'Criação de Software para Empresas | DF Informática';
 $page_description = 'Empresa de criação de software e criação de sistemas web em Brasília DF. Especialistas em criação de software para empresas e desenvolvimento de software sob medida.';
 $page_canonical = $site_url . '/criacao-software.php';
+$page_breadcrumb_name = 'Criação de Software';
 include 'includes/head.php';
 $current_page = 'services';
 include 'includes/header.php';
 ?>
     <!-- Hero Section -->
-    <section class="hero-area-three pt-210 rpt-150 pb-130 rpb-100 rel z-1">
+    <section class="hero-area-three bgc-black-with-lighting pt-210 rpt-150 pb-130 rpb-100 rel z-1">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-8">
             <div class="hero-content-three rmb-55 wow fadeInUp delay-0-2s">
+              <?php include 'includes/breadcrumb.php'; ?>
               <span class="sub-title mb-20">DF Informática</span>
               <h1>Criação de Software para Empresas</h1>
               <p class="mb-35">Somos uma <strong>empresa de criação de software</strong> especializada em <strong>criação de software para empresas</strong>. Desenvolvemos <strong>criação de sistemas web</strong> e software sob medida que transformam a operação do seu negócio.</p>

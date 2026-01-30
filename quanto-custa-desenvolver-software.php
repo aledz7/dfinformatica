@@ -3,15 +3,17 @@ include 'includes/config.php';
 $page_title = 'Quanto Custa Desenvolver um Software? | DF Informática';
 $page_description = 'Descubra quanto custa para desenvolver um software e quanto custa um software personalizado. Fatores que influenciam o preço do desenvolvimento de software sob medida.';
 $page_canonical = $site_url . '/quanto-custa-desenvolver-software.php';
+$page_breadcrumb_name = 'Quanto Custa Desenvolver Software';
 include 'includes/head.php';
 $current_page = 'services';
 include 'includes/header.php';
 ?>
-    <section class="hero-area-three pt-210 rpt-150 pb-130 rpb-100 rel z-1">
+    <section class="hero-area-three bgc-black-with-lighting pt-210 rpt-150 pb-130 rpb-100 rel z-1">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-8">
             <div class="hero-content-three rmb-55 wow fadeInUp delay-0-2s">
+              <?php include 'includes/breadcrumb.php'; ?>
               <span class="sub-title mb-20">DF Informática</span>
               <h1>Quanto Custa para Desenvolver um Software?</h1>
               <p class="mb-35">Uma das principais dúvidas de quem busca <strong>desenvolvimento de software sob medida</strong> é: <strong>quanto custa para desenvolver um software</strong>? Ou ainda: <strong>quanto custa um software personalizado</strong>? Nesta página explicamos os fatores que influenciam o investimento.</p>

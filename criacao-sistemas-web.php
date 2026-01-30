@@ -3,15 +3,17 @@ include 'includes/config.php';
 $page_title = 'Criação de Sistemas Web | DF Informática';
 $page_description = 'Criação de sistemas web em Brasília DF. Empresa especializada em desenvolvimento de sistemas web, software sob medida e criação de software para empresas.';
 $page_canonical = $site_url . '/criacao-sistemas-web.php';
+$page_breadcrumb_name = 'Criação de Sistemas Web';
 include 'includes/head.php';
 $current_page = 'services';
 include 'includes/header.php';
 ?>
-    <section class="hero-area-three pt-210 rpt-150 pb-130 rpb-100 rel z-1">
+    <section class="hero-area-three bgc-black-with-lighting pt-210 rpt-150 pb-130 rpb-100 rel z-1">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-8">
             <div class="hero-content-three rmb-55 wow fadeInUp delay-0-2s">
+              <?php include 'includes/breadcrumb.php'; ?>
               <span class="sub-title mb-20">DF Informática</span>
               <h1>Criação de Sistemas Web</h1>
               <p class="mb-35">Especialistas em <strong>criação de sistemas web</strong> para empresas. Desenvolvemos plataformas web modernas, responsivas e seguras. Como <strong>empresa de criação de software</strong>, oferecemos <strong>desenvolvimento de software sob medida</strong> e sistemas personalizados.</p>

@@ -3,16 +3,18 @@ include 'includes/config.php';
 $page_title = 'Software Sob Medida - Desenvolvimento Personalizado | DF Informática';
 $page_description = 'Desenvolvimento de software sob medida, à medida e sob encomenda em Brasília DF. Empresa especializada em criação de software personalizado para sua empresa.';
 $page_canonical = $site_url . '/software-sob-medida.php';
+$page_breadcrumb_name = 'Software Sob Medida';
 include 'includes/head.php';
 $current_page = 'services';
 include 'includes/header.php';
 ?>
     <!-- Hero Section -->
-    <section class="hero-area-three pt-210 rpt-150 pb-130 rpb-100 rel z-1">
+    <section class="hero-area-three bgc-black-with-lighting pt-210 rpt-150 pb-130 rpb-100 rel z-1">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-8">
             <div class="hero-content-three rmb-55 wow fadeInUp delay-0-2s">
+              <?php include 'includes/breadcrumb.php'; ?>
               <span class="sub-title mb-20">DF Informática</span>
               <h1>Software Sob Medida para sua Empresa</h1>
               <p class="mb-35">Desenvolvemos <strong>software sob medida</strong>, <strong>software à medida</strong> e <strong>software sob encomenda</strong> para empresas que precisam de soluções personalizadas. Diferente de pacotes prontos, nosso desenvolvimento de software sob medida é feito exclusivamente para atender às necessidades do seu negócio.</p>

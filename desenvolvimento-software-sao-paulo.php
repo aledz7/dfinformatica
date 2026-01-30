@@ -3,16 +3,18 @@ include 'includes/config.php';
 $page_title = 'Desenvolvimento de Software em São Paulo SP | DF Informática';
 $page_description = 'Desenvolvimento de software em São Paulo SP. Atendemos empresas paulistas com software sob medida e sistemas personalizados. Desenvolvimento remoto com qualidade.';
 $page_canonical = $site_url . '/desenvolvimento-software-sao-paulo.php';
+$page_breadcrumb_name = 'Desenvolvimento de Software em São Paulo';
 include 'includes/head.php';
 $current_page = 'services';
 include 'includes/header.php';
 ?>
     <!-- Hero Section -->
-    <section class="hero-area-three pt-210 rpt-150 pb-130 rpb-100 rel z-1">
+    <section class="hero-area-three bgc-black-with-lighting pt-210 rpt-150 pb-130 rpb-100 rel z-1">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-8">
             <div class="hero-content-three rmb-55 wow fadeInUp delay-0-2s">
+              <?php include 'includes/breadcrumb.php'; ?>
               <span class="sub-title mb-20">DF Informática</span>
               <h1>Desenvolvimento de Software em São Paulo SP</h1>
               <p class="mb-35">Atendemos empresas de <strong>São Paulo SP</strong> com <strong>desenvolvimento de software em São Paulo</strong>. Mesmo com sede em Brasília DF, nossa equipe desenvolve software sob medida para clientes paulistas com a mesma qualidade, através de atendimento remoto.</p>

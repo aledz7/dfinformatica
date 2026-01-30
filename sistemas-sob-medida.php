@@ -3,16 +3,18 @@ include 'includes/config.php';
 $page_title = 'Sistemas Sob Medida e Personalizados | DF Informática';
 $page_description = 'Desenvolvimento de sistemas sob medida e sistemas personalizados em Brasília DF. Empresa especializada em criação de sistemas sob encomenda para empresas.';
 $page_canonical = $site_url . '/sistemas-sob-medida.php';
+$page_breadcrumb_name = 'Sistemas Sob Medida';
 include 'includes/head.php';
 $current_page = 'services';
 include 'includes/header.php';
 ?>
     <!-- Hero Section -->
-    <section class="hero-area-three pt-210 rpt-150 pb-130 rpb-100 rel z-1">
+    <section class="hero-area-three bgc-black-with-lighting pt-210 rpt-150 pb-130 rpb-100 rel z-1">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-8">
             <div class="hero-content-three rmb-55 wow fadeInUp delay-0-2s">
+              <?php include 'includes/breadcrumb.php'; ?>
               <span class="sub-title mb-20">DF Informática</span>
               <h1>Sistemas Sob Medida e Personalizados</h1>
               <p class="mb-35">Desenvolvemos <strong>sistemas sob medida</strong> e <strong>desenvolvimento de sistemas personalizados</strong> para empresas que precisam de soluções exclusivas. Nossa empresa desenvolvedora de software cria sistemas sob encomenda que se adaptam perfeitamente aos seus processos.</p>

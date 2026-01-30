@@ -3,16 +3,18 @@ include 'includes/config.php';
 $page_title = 'Empresas de Software em Florianópolis | DF Informática';
 $page_description = 'Empresas de software em Florianópolis. Atendemos empresas de Floripa com desenvolvimento de software sob medida e sistemas personalizados. Atendimento remoto.';
 $page_canonical = $site_url . '/empresas-software-florianopolis.php';
+$page_breadcrumb_name = 'Empresas de Software em Florianópolis';
 include 'includes/head.php';
 $current_page = 'services';
 include 'includes/header.php';
 ?>
     <!-- Hero Section -->
-    <section class="hero-area-three pt-210 rpt-150 pb-130 rpb-100 rel z-1">
+    <section class="hero-area-three bgc-black-with-lighting pt-210 rpt-150 pb-130 rpb-100 rel z-1">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-8">
             <div class="hero-content-three rmb-55 wow fadeInUp delay-0-2s">
+              <?php include 'includes/breadcrumb.php'; ?>
               <span class="sub-title mb-20">DF Informática</span>
               <h1>Empresas de Software em Florianópolis</h1>
               <p class="mb-35">Se sua empresa em <strong>Florianópolis</strong> busca <strong>empresas de software</strong> para desenvolver soluções personalizadas, a DF Informática está pronta para atender. Oferecemos <strong>desenvolvimento de software sob medida</strong> e <strong>sistemas personalizados</strong> para clientes de Floripa e todo o Brasil.</p>

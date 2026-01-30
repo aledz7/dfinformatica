@@ -5,5 +5,8 @@ if (!defined('DF_CONFIG_LOADED')) {
     $verifica_celular = new Mobile_Detect;
     $whatsapp = '556198524612';
     $site_url = 'https://www.dfinformatica.com.br';
+    $og_image = $site_url . '/assets/images/logos/logo1-sem%20fundo2.png';
+    if (!isset($page_image)) $page_image = $og_image;
+    if (!isset($page_type)) $page_type = 'website';
 }
 ?>

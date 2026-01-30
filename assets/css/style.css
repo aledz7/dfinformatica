@@ -3959,6 +3959,26 @@ h6, .h6 {
 .hero-content-three .video-play-text span:not(:hover) {
   color: #293043; }
 
+/* Hero area three - dark background (internal pages) - alta visibilidade */
+.hero-area-three.bgc-black-with-lighting .hero-content-three .sub-title,
+.hero-area-three.bgc-black-with-lighting .hero-content-three h1,
+.hero-area-three.bgc-black-with-lighting .hero-content-three p,
+.hero-area-three.bgc-black-with-lighting .hero-content-three p strong {
+  color: #ffffff !important; }
+.hero-area-three.bgc-black-with-lighting .hero-content-three h1 span {
+  color: #01c9f5 !important; }
+.hero-area-three.bgc-black-with-lighting .breadcrumb-nav,
+.hero-area-three.bgc-black-with-lighting .breadcrumb-nav .breadcrumb-list,
+.hero-area-three.bgc-black-with-lighting .breadcrumb-nav a,
+.hero-area-three.bgc-black-with-lighting .breadcrumb-nav li {
+  color: #ffffff !important; }
+.hero-area-three.bgc-black-with-lighting .breadcrumb-nav a:hover {
+  color: #01c9f5 !important; }
+.hero-area-three.bgc-black-with-lighting .hero-btns .theme-btn.style-three:not(:hover) {
+  border-color: #ffffff !important;
+  color: #ffffff !important;
+  background: rgba(255, 255, 255, 0.12) !important; }
+
 /*******************************************************/
 /******************* 08. Page Banner *******************/
 /*******************************************************/

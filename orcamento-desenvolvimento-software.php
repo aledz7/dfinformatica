@@ -3,15 +3,17 @@ include 'includes/config.php';
 $page_title = 'Orçamento para Desenvolvimento de Software | DF Informática';
 $page_description = 'Solicite orçamento para desenvolvimento de software. Resposta em 24h, sem compromisso. Empresa desenvolvedora de software em Brasília DF.';
 $page_canonical = $site_url . '/orcamento-desenvolvimento-software.php';
+$page_breadcrumb_name = 'Orçamento';
 include 'includes/head.php';
 $current_page = 'services';
 include 'includes/header.php';
 ?>
-    <section class="hero-area-three pt-210 rpt-150 pb-130 rpb-100 rel z-1">
+    <section class="hero-area-three bgc-black-with-lighting pt-210 rpt-150 pb-130 rpb-100 rel z-1">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-8">
             <div class="hero-content-three rmb-55 wow fadeInUp delay-0-2s">
+              <?php include 'includes/breadcrumb.php'; ?>
               <span class="sub-title mb-20">DF Informática</span>
               <h1>Orçamento para Desenvolvimento de Software</h1>
               <p class="mb-35">Solicite seu <strong>orçamento para desenvolvimento de software</strong> sem compromisso. Nossa equipe analisa seu projeto e retorna em até 24 horas com uma proposta personalizada para seu software sob medida.</p>
