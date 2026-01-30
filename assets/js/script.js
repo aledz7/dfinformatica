@@ -62,10 +62,21 @@
         var mobileWidth = 992;
         var navcollapse = $('.navigation li.dropdown');
 
-        navcollapse.hover(function () {
+        navcollapse.on('mouseenter', function () {
             if ($(window).innerWidth() >= mobileWidth) {
-                $(this).children('ul').stop(true, false, true).slideToggle(300);
-                $(this).children('.megamenu').stop(true, false, true).slideToggle(300);
+                var $this = $(this);
+                clearTimeout($this.data('dropdownTimer'));
+                $this.children('ul').stop(true, false, true).slideDown(300);
+                $this.children('.megamenu').stop(true, false, true).slideDown(300);
+            }
+        }).on('mouseleave', function () {
+            if ($(window).innerWidth() >= mobileWidth) {
+                var $this = $(this);
+                var timer = setTimeout(function() {
+                    $this.children('ul').stop(true, false, true).slideUp(300);
+                    $this.children('.megamenu').stop(true, false, true).slideUp(300);
+                }, 200);
+                $this.data('dropdownTimer', timer);
             }
         });
         
@@ -492,14 +503,16 @@
         }
         
         
-        // 23. OnePage Nav Scroll
+        // 23. OnePage Nav Scroll - apenas para links com âncora (#)
         $(".onepage a").on('click', function(e){
-            e.preventDefault();
             var hash = this.hash;
-            var position = $(hash).offset().top;
-            $("html").animate({
-                scrollTop : position
-            },1000);
+            if (hash && $(hash).length) {
+                e.preventDefault();
+                var position = $(hash).offset().top;
+                $("html").animate({
+                    scrollTop : position
+                },1000);
+            }
         });
         
  

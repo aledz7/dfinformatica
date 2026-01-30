@@ -14,7 +14,7 @@ $whatsapp = '556198524612';
   <!-- Required meta tags -->
   <meta charset="utf-8" />
   <meta name="description"
-    content="Criação de sistemas, App/Aplicativos e Softwares sob medida DF. Desenvolvimento e Manutenção de Sistemas DF. Software Personalizados Brasilia DF." />
+    content="Desenvolvimento de software sob medida em Brasília DF. Empresa desenvolvedora de software, criação de sistemas personalizados e software à medida. Software sob encomenda para empresas." />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
@@ -28,10 +28,16 @@ $whatsapp = '556198524612';
   <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Desenvolvimento de Aplicativos e Sistemas - DF Informática",
+        "@type": "LocalBusiness",
+        "name": "DF Informática - Desenvolvimento de Software Sob Medida",
         "url": "https://www.dfinformatica.com.br",
         "logo": "https://dfinformatica.com.br/assets/images/logos/logo1-sem fundo2.png",
+        "description": "Empresa desenvolvedora de software sob medida em Brasília DF. Criação de sistemas personalizados e software à medida.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Brasília",
+          "addressRegion": "DF"
+        },
         "contactPoint": {
           "@type": "ContactPoint",
           "telephone": "+5561998524612",
@@ -41,7 +47,7 @@ $whatsapp = '556198524612';
     </script>
 
   <!-- Title -->
-  <title>Desenvolvimento de App/Aplicativos e Sistemas Sob-medida - DF</title>
+  <title>Desenvolvimento de Software Sob Medida em Brasília DF | DF Informática</title>
   <!-- Favicon Icon -->
   <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
   <style>
@@ -12185,6 +12191,17 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                         title="Tudo sobre marketing digital é com a DF Informática">Sobre Nós</a></li>
                     <li><a href="#project" onClick="document.getElementById('botao_celular').click();"
                         title="Projetos de desenvolvimento de sistemas">Projetos</a></li>
+                    <li class="dropdown"><a href="#">Serviços</a>
+                      <ul>
+                        <li><a href="software-sob-medida.php">Software Sob Medida</a></li>
+                        <li><a href="sistemas-sob-medida.php">Sistemas Personalizados</a></li>
+                        <li><a href="criacao-software.php">Criação de Software</a></li>
+                        <li><a href="criacao-sistemas-web.php">Criação de Sistemas Web</a></li>
+                        <li><a href="desenvolvedor-sistemas.php">Desenvolvedor de Sistemas</a></li>
+                        <li><a href="quanto-custa-desenvolver-software.php">Quanto Custa</a></li>
+                        <li><a href="orcamento-desenvolvimento-software.php">Orçamento</a></li>
+                      </ul>
+                    </li>
                     <li><a href=""
                         onClick="window.open('https://api.whatsapp.com/send?phone=<?php echo $whatsapp; ?>&text=Gostaria%20de%20saber%20mais%20informações%20sobre%20desenvolvimento%20de%20sistemas'); "
                         target="_blank">Preços</a></li>
@@ -13022,14 +13039,21 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
             <div class="footer-widget widget_nav_menu wow fadeInUp delay-0-4s">
               <h4 class="footer-title">Links Rápidos</h4>
               <ul class="list-style-two">
-                <li><a href="#index">Home</a></li>
-                <li><a href="#about">Sobre Nós</a></li>
-                <li><a href="#project">Projetos</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="index.php#about">Sobre Nós</a></li>
+                <li><a href="index.php#project">Projetos</a></li>
+                <li><a href="software-sob-medida.php">Software Sob Medida</a></li>
+                <li><a href="sistemas-sob-medida.php">Sistemas Personalizados</a></li>
+                <li><a href="criacao-software.php">Criação de Software</a></li>
+                <li><a href="criacao-sistemas-web.php">Criação de Sistemas Web</a></li>
+                <li><a href="desenvolvedor-sistemas.php">Desenvolvedor de Sistemas</a></li>
+                <li><a href="quanto-custa-desenvolver-software.php">Quanto Custa</a></li>
+                <li><a href="orcamento-desenvolvimento-software.php">Orçamento</a></li>
+                <li><a href="desenvolvimento-software-brasilia.php">Brasília DF</a></li>
                 <li><a
                     href="javascript:window.open('https://api.whatsapp.com/send?phone=<?php echo $whatsapp; ?>&text=Gostaria%20de%20saber%20mais%20informações%20sobre%20desenvolvimento%20de%20sistemas'); ">Preços</a>
                 </li>
-                <li><a href="#depoimentos">Depoimentos</a></li>
-                <li><a href="#contact">Contato</a></li>
+                <li><a href="index.php#contact">Contato</a></li>
 
                 <!--<li><a href="#">Product Engineering</a></li>
                                 <li><a href="#">Latest News</a></li>
